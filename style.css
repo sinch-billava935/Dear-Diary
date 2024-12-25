@@ -1,0 +1,149 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e0e0e0);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: #4a90e2;
+    font-family: 'Dancing Script', cursive;
+}
+
+header p {
+    position: relative;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  header p::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #4A90E2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+  }
+  
+  
+
+#current-date {
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+/* Input Section */
+.diary-input-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 95%;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+    margin-bottom: 10px;
+    margin-right: 1rem;
+}
+
+  
+#save-thoughts-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+#save-thoughts-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #FEB47B, #FF7E5F);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+/* Entries Section */
+.diary-entries-section {
+    margin-top: 20px;
+}
+
+.placeholder-text {
+    font-style: italic;
+    color: #999;
+}
+
+.diary-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid;
+  border-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border-image-slice: 1;
+  }
+  
+  .diary-entry:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+/* Delete Icon (SVG) */
+.delete-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.delete-icon svg {
+    fill: #e74c3c;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.delete-icon svg:hover {
+    transform: scale(1.2);
+}
